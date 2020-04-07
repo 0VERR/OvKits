@@ -1,0 +1,65 @@
+MySQL:
+  username: 'username'
+  password: 'pass'
+  host: 'host'
+  port: 3306
+  database: 'data'
+Kits:
+  Gracz:
+    kitname: '&7Gracz'
+    slotInGui: 3
+    itemGuiName: '&7Kit Gracz'
+    cooldown: 60
+    itemInGui: DIAMOND
+    loreInGui:
+      - 'to najlepszy plugin'
+      - 'na swiecie'
+    items:
+      helm:
+        material: DIAMOND_HELMET
+        durability: 0
+        name: 'Klatka'
+        lore:
+          - 'To jest fajna klata'
+          - 'tak jest super'
+        amount: 1
+        enchant:
+          - DURABILITY:3
+      buciki:
+        material: DIAMOND_BOOTS
+        durability: 0
+        name: 'Buciki'
+        lore:
+          - 'To sa fajne buciki'
+          - 'tak jest super'
+        amount: 1
+        enchant:
+          - DURABILITY:3
+  VIP:
+    kitname: '&eVIP'
+    slotInGui: 4
+    itemGuiName: '&cKit VIP'
+    cooldown: 120
+    itemInGui: DIAMOND
+    loreInGui: []
+    items:
+      helm:
+        material: DIAMOND_HELMET
+        durability: 0
+        name: 'Klatka'
+        lore:
+          - []
+        amount: 1
+        enchant: []
+      buciki:
+        material: DIAMOND_BOOTS
+        durability: 0
+        name: 'Buciki'
+        lore:
+          - 'To sa fajne buciki'
+          - 'tak jest super'
+        amount: 1
+        enchant:
+          - DURABILITY:3
+
+

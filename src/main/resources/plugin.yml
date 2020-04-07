@@ -1,0 +1,6 @@
+main: pl.overr.kits.KitsPlugin
+version: 0.1
+name: OvKits
+author: 0VERR
+commands:
+  kit:
