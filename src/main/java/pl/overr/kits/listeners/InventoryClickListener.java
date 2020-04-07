@@ -57,7 +57,7 @@ public class InventoryClickListener implements Listener {
                 if (clickedItem.getItemMeta().getDisplayName().equalsIgnoreCase(InventoryUtil.backItem.getItemMeta().getDisplayName())) {
                     String kitName = clickedItem.getItemMeta().getDisplayName().split(": ")[1];
                     Kit kit = kitManager.getKit(kitName);
-                    if (player.hasPermission("OvKit." + kit.getKitName())) {
+                    if (player.hasPermission("OvKit." + kit.getKitPermission())) {
                         if (userManager.getTime(player, kitName) < System.currentTimeMillis()) {
                             kit.getItems().forEach(item -> {
                                 player.getInventory().addItem(item);
@@ -67,7 +67,6 @@ public class InventoryClickListener implements Listener {
                         } else player.sendMessage(FixColor.fixer("&cMusisz poczekac!"));
                     } else player.sendMessage(FixColor.fixer("&cNie masz permisji"));
                 }
-
             }
         }
     }

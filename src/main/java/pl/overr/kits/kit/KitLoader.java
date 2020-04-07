@@ -73,7 +73,7 @@ public class KitLoader {
                 System.out.println("Amount: " + item.getAmount());
             }
 
-            Kit kit1 = new Kit(kitName,new ItemStack(Material.getMaterial(itemInGui)), kitName,loreInGuiPre, slotInGui, itemInGuiName, items,cooldown);
+            Kit kit1 = new Kit(kitName,new ItemStack(Material.getMaterial(itemInGui)), kitName,loreInGuiPre, kit, slotInGui, itemInGuiName, items,cooldown);
 
             kitManager.addToKits(kit1);
         }

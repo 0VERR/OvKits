@@ -11,6 +11,12 @@ public class Kit {
     private final String nameInGui;
     private final List<String> loreInGui;
 
+    public String getKitPermission() {
+        return kitPermission;
+    }
+
+    private final String kitPermission;
+
     public int getSlotInGui() {
         return slotInGui;
     }
@@ -48,11 +54,12 @@ public class Kit {
     private final Set<ItemStack> items;
     private final long cooldown;
 
-    public Kit(String kitName, ItemStack itemInGui, String nameInGui, List<String> loreInGui, int slotInGui, String itemInGuiName, Set<ItemStack> items, long cooldown) {
+    public Kit(String kitName, ItemStack itemInGui, String nameInGui, List<String> loreInGui, String kitPermission, int slotInGui, String itemInGuiName, Set<ItemStack> items, long cooldown) {
         this.kitName = kitName;
         this.itemInGui = itemInGui;
         this.nameInGui = nameInGui;
         this.loreInGui = loreInGui;
+        this.kitPermission = kitPermission;
         this.slotInGui = slotInGui;
         this.itemInGuiName = itemInGuiName;
         this.items = items;
